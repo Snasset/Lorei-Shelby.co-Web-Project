@@ -1,0 +1,246 @@
+body {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: rgb(220, 220, 220);
+    margin: 0px;
+    padding: 0;
+    
+}
+
+header p {
+    font-size: 20px;
+}
+header {
+    text-align: center;
+    display: inline;   
+    background-color: white;
+}
+header img{
+    background-color: white;
+    object-position: center;
+}
+
+header h1{
+    color: #efa86b;
+    text-shadow: 2px 2px rgb(0, 0, 0,0.2);
+}
+.textshadow{
+    text-shadow: 2px 1px rgb(0, 0, 0,0.2);
+}
+
+.intro  {
+    text-align: center;
+    padding-top: 1em;
+    padding-bottom: 2em;
+    font-size: 18px;
+    padding-top: 30px;
+    padding-right: 50px;
+    padding-left: 50px;
+    color: #07203f;
+}
+.intro h2{
+    color: #efa86b;
+}
+.headcard{
+    background-color: white;
+    border: 4px solid rgb(235, 235, 235);
+    border-style: none none solid none;
+}
+.card {
+    border: 4px solid rgb(235, 235, 235);
+    background-color: white;
+ }
+
+.flexcolumn {
+    display: flex;
+    flex-direction: column;
+}
+
+.flexrow {
+    display: flex;
+}
+
+.charis {
+    flex-basis: 50%;
+    text-align: center;
+    color: #efa86b;
+}
+.charis p{
+    font-size: 18px;
+    padding: 20px;
+}
+
+.gaming img{
+    padding-top: 50px;
+    padding-bottom: 76px;
+}
+
+.featured-image {
+    object-position: center;
+    object-fit: cover;
+}
+
+.basic img {
+    width: 19em;
+}
+
+.lux img {
+    width: 25.5em;
+    padding-bottom: 6px;
+}
+
+img{
+    max-width: 100%;
+}
+
+nav .navbar{
+    font-size: 18px;
+    font-weight: 500;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+
+nav a:hover{
+    color: #7D533E;
+    overflow: auto;
+}
+nav li{
+    display:inline;
+    list-style-type: none;
+    margin-right: 20px;
+    overflow: auto;
+    
+}
+nav{
+    background-color:#ebb485;
+    padding: 0.5px;
+    position: sticky;
+    top:  0;
+    z-index: 100;
+    text-align: left;
+}
+nav .logo{
+    font-size: large;
+    background-color: #da956c;
+    padding: 3px;
+    border:2px solid #7D533E ;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    color: #7D533E;
+    text-decoration: none;
+}
+.logo h1{
+    background-color: #da956c;
+    padding: 10px;
+    border:2px solid #7D533E;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    margin: 0;
+    color: #7D533E;
+    box-sizing: content-box;
+}
+footer{
+    padding: 5px;
+    padding-top: 20px;
+    color:  #635036;
+    background-color:#ebaf7a;
+    text-align: center;
+    font-weight: bold;
+
+}
+footer a{
+    color:#f0f0f0;
+}
+
+
+p{
+    color: #78592e;
+}
+
+.zoom{
+    transition: transform .2s;
+    
+}
+
+.zoom:hover{
+    transform: scale(1.1);
+}
+
+
+.image{
+    cursor: pointer;
+}
+
+
+.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 101;
+    display: none;
+}
+.popup span{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgb(0, 0, 0,0.9);
+    cursor: pointer;
+}
+.popup img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border: 5px solid white;
+    border-radius: 5px;
+    width: 750px;
+    object-fit: cover;
+}
+
+
+
+.profile{
+    text-align: center;
+    background-color: #ebb485;
+    color: #635036;
+    padding-bottom: 1px;
+    border-style: solid solid none solid;
+}
+
+.profile img{
+    object-position: center;
+    object-fit: cover;
+    width: 15%;
+    
+    border-radius: 50%;
+    border: 5px solid #7a6343;
+}
+
+
+
+@media screen and (max-width:1000px) {
+
+    body{
+        width: 100%;
+    }
+    .workimage{
+        height: 300px;
+    }
+
+    .flexrow{
+        flex-direction: column;
+    }  
+
+    .profile img{
+        width: 40%;
+    }
+
+    nav a{
+        font-size: 12px;
+    }
+    nav .logo{
+        font-size: 12px;
+        padding: 1px;
+    }
+
+}
